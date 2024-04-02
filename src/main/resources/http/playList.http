@@ -1,0 +1,51 @@
+###
+POST http://localhost:8080/playlist/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDkxMDQ4NDUsImVtYWlsIjoidXNlckBtYWlsLnJ1MSIsInJvbGUiOiJST0xFX1VTRVIiLCJleHAiOjE3MDkxOTEyNDUsImlzcyI6Ikt1blV6VGVzdCJ9.aGbcQpY-U12SxLhgu9M8qVYPBV_K5gobBpm3vqZLwXXxTTnLDjHORaIYFXKNLkXoi57NqX2Re2jZmd_RhsyGsA
+
+{
+  "channelId": "7bd0504e-be7f-4e05-b643-82f61d0cde9b",
+  "name": "hfhghgjg",
+  "description": "kgkgkgkgkhkhk",
+  "status": "PRIVATE",
+  "orderNumber": 1
+}
+
+### eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDkxMTA5NjQsImVtYWlsIjoiYWJqYWxpbG92b3pvZGpvbkBnbWFpbC5jb20iLCJyb2xlIjoiUk9MRV9BRE1JTiIsImV4cCI6MTcwOTE5NzM2NCwiaXNzIjoiS3VuVXpUZXN0In0.nxe5bjyFrIwbb3tW0pI9yHLXymnbyjgdjKkWPxxEZgKUVX2pZJChZYHANn6k6mVytamAe29ca4v6V9c6rBr-5Q
+GET http://localhost:8080/playlist/changePlayList
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDkxMDQ4NDUsImVtYWlsIjoidXNlckBtYWlsLnJ1MSIsInJvbGUiOiJST0xFX1VTRVIiLCJleHAiOjE3MDkxOTEyNDUsImlzcyI6Ikt1blV6VGVzdCJ9.aGbcQpY-U12SxLhgu9M8qVYPBV_K5gobBpm3vqZLwXXxTTnLDjHORaIYFXKNLkXoi57NqX2Re2jZmd_RhsyGsA
+
+{
+  "status": "PRIVATE"
+}
+#####
+DELETE http://localhost:8080/playlist/delete/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDkxMDQ4NDUsImVtYWlsIjoidXNlckBtYWlsLnJ1MSIsInJvbGUiOiJST0xFX1VTRVIiLCJleHAiOjE3MDkxOTEyNDUsImlzcyI6Ikt1blV6VGVzdCJ9.aGbcQpY-U12SxLhgu9M8qVYPBV_K5gobBpm3vqZLwXXxTTnLDjHORaIYFXKNLkXoi57NqX2Re2jZmd_RhsyGsA
+###
+GET http://localhost:8080/playlist/palayListPage?page=1&size=2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDkxMTExNDgsImVtYWlsIjoiYWJqYWxpbG92b3pvZGpvbkBnbWFpbC5jb20iLCJyb2xlIjoiUk9MRV9BRE1JTiIsImV4cCI6MTcwOTE5NzU0OCwiaXNzIjoiS3VuVXpUZXN0In0.Jk-ythHwVIq3ZK2_nq0XgyyG3LaZisme3KDm22wSMQ9y4NOfvPjFsnSDRo1_WTbGwfrkYh5I1g60YkUbbFq-JQ
+
+###
+GET http://localhost:8080/playlist/palayListPageDesc?page=1&size=2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDkxMTExNDgsImVtYWlsIjoiYWJqYWxpbG92b3pvZGpvbkBnbWFpbC5jb20iLCJyb2xlIjoiUk9MRV9BRE1JTiIsImV4cCI6MTcwOTE5NzU0OCwiaXNzIjoiS3VuVXpUZXN0In0.Jk-ythHwVIq3ZK2_nq0XgyyG3LaZisme3KDm22wSMQ9y4NOfvPjFsnSDRo1_WTbGwfrkYh5I1g60YkUbbFq-JQ
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

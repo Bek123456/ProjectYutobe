@@ -1,0 +1,16 @@
+POST http://localhost:8080/video_like/created
+Content-Type: application/json
+
+{
+  "profileId": 2,
+  "videoId": "a4f8d4eb-b66b-47dd-83c9-3b021eda4129",
+  "type": "Like"
+}
+
+###
+DELETE http://localhost:8080/video_like/deleted/1
+
+
+###
+GET http://localhost:8080/video_like/userlikedvideolistuserid/2
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTE3Mjg5NjgsImVtYWlsIjoiYWJqYWxpbG92b3pvZGpvbkBnbWFpbC5jb20iLCJyb2xlIjoiUk9MRV9BRE1JTiIsImV4cCI6MTcxMTgxNTM2OCwiaXNzIjoiS3VuVXpUZXN0In0.UQCGJMhf7E4zTD1QLKKpcRbKwyA3EnUdNYmVFS3zYd-X0ppq-xAU7aviPlVrV_bPHM0bajt-OPnTdz5HDxGrMg

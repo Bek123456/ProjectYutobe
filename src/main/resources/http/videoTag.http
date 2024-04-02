@@ -1,0 +1,36 @@
+###
+POST http://localhost:8080/videotag/created
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDkzNzIwMDMsImVtYWlsIjoic2FydmFyQG1haWwucnUxIiwicm9sZSI6IlJPTEVfT1dORVIiLCJleHAiOjE3MDk0NTg0MDMsImlzcyI6Ikt1blV6VGVzdCJ9.8hqRvww5qk6gMsygQdF2_Jh_hbYmEyQCli_spfyecrw2afTAwEfhRiN0LvEwSrqjt-gAP6_e7g1We4Y4wn3dcg
+
+{
+  "video_id": "a4f8d4eb-b66b-47dd-83c9-3b021eda4129",
+  "tag_id":2
+}
+
+
+###
+POST http://localhost:8080/videotag/created
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDkzNzIwMDMsImVtYWlsIjoic2FydmFyQG1haWwucnUxIiwicm9sZSI6IlJPTEVfT1dORVIiLCJleHAiOjE3MDk0NTg0MDMsImlzcyI6Ikt1blV6VGVzdCJ9.8hqRvww5qk6gMsygQdF2_Jh_hbYmEyQCli_spfyecrw2afTAwEfhRiN0LvEwSrqjt-gAP6_e7g1We4Y4wn3dcg
+
+{
+  "video_id": "a4f8d4eb-b66b-47dd-83c9-3b021eda4129",
+  "tag_id": 2
+}
+
+###
+DELETE http://localhost:8080/videotag/deleted
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDkzNzIwMDMsImVtYWlsIjoic2FydmFyQG1haWwucnUxIiwicm9sZSI6IlJPTEVfT1dORVIiLCJleHAiOjE3MDk0NTg0MDMsImlzcyI6Ikt1blV6VGVzdCJ9.8hqRvww5qk6gMsygQdF2_Jh_hbYmEyQCli_spfyecrw2afTAwEfhRiN0LvEwSrqjt-gAP6_e7g1We4Y4wn3dcg
+
+{
+  "video_id": "a4f8d4eb-b66b-47dd-83c9-3b021eda4129",
+  "tag_id": 2
+}
+
+###
+GET http://localhost:8080/videotag/getVideoTagList/a4f8d4eb-b66b-47dd-83c9-3b021eda4129
+
+
+

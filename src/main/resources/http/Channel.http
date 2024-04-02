@@ -1,0 +1,76 @@
+POST http://localhost:8080/channel/created
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDg4NTQ0ODYsImVtYWlsIjoidXNlckBtYWlsLnJ1MSIsInJvbGUiOiJST0xFX1VTRVIiLCJleHAiOjE3MDg5NDA4ODYsImlzcyI6Ikt1blV6VGVzdCJ9.xBtnRwNfgctMlx60QPRdlZ6lY6pT7blOBsqFxMyDSfKm-Zr7XyWeCh3qJM_XgzOIjYFq7v6QYzdt5PwIkF9MLQ
+
+{
+  "name": "KUN.UZ",
+  "photoId": "9caf351e-67bb-4aad-a70a-70cd0850c620",
+  "description": "SALE",
+  "status": "ACTIVE",
+  "bannerId": "f5aeacf4-9714-4689-ac9c-5698b6da25f7",
+  "subscribeCount": 0
+}
+
+
+######
+PUT http://localhost:8080/channel/update/7bd0504e-be7f-4e05-b643-82f61d0cde9b
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDg4NTQ0ODYsImVtYWlsIjoidXNlckBtYWlsLnJ1MSIsInJvbGUiOiJST0xFX1VTRVIiLCJleHAiOjE3MDg5NDA4ODYsImlzcyI6Ikt1blV6VGVzdCJ9.xBtnRwNfgctMlx60QPRdlZ6lY6pT7blOBsqFxMyDSfKm-Zr7XyWeCh3qJM_XgzOIjYFq7v6QYzdt5PwIkF9MLQ
+
+{
+  "name": "salomlar",
+  "description": "kelmadi",
+  "status": "ACTIVE"
+}
+
+###
+# @no-cookie-jar
+PUT http://localhost:8080/channel/update/3170a0b2-e726-4752-963d-a0dbfc2320a7
+Content-Type: application/json
+
+{
+  "name": "salomlar",
+  "description": "kelmadi",
+  "status": "ACTIVE"
+}
+
+###
+PUT http://localhost:8080/channel/updatePhoto/7bd0504e-be7f-4e05-b643-82f61d0cde9b
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDg4NTQ0ODYsImVtYWlsIjoidXNlckBtYWlsLnJ1MSIsInJvbGUiOiJST0xFX1VTRVIiLCJleHAiOjE3MDg5NDA4ODYsImlzcyI6Ikt1blV6VGVzdCJ9.xBtnRwNfgctMlx60QPRdlZ6lY6pT7blOBsqFxMyDSfKm-Zr7XyWeCh3qJM_XgzOIjYFq7v6QYzdt5PwIkF9MLQ
+
+{
+  "photoId": "f5aeacf4-9714-4689-ac9c-5698b6da25f7"
+}
+
+
+###
+PUT http://localhost:8080/channel/updateBanner/7bd0504e-be7f-4e05-b643-82f61d0cde9b
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDg4NTQ0ODYsImVtYWlsIjoidXNlckBtYWlsLnJ1MSIsInJvbGUiOiJST0xFX1VTRVIiLCJleHAiOjE3MDg5NDA4ODYsImlzcyI6Ikt1blV6VGVzdCJ9.xBtnRwNfgctMlx60QPRdlZ6lY6pT7blOBsqFxMyDSfKm-Zr7XyWeCh3qJM_XgzOIjYFq7v6QYzdt5PwIkF9MLQ
+
+{
+  "bannerId": "f5aeacf4-9714-4689-ac9c-5698b6da25f7"
+}
+
+###
+GET http://localhost:8080/channel/getPagination?page=1&size=2
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDg4NzAwNTMsImVtYWlsIjoiYWJqYWxpbG92b3pvZGpvbkBnbWFpbC5jb20iLCJyb2xlIjoiUk9MRV9BRE1JTiIsImV4cCI6MTcwODk1NjQ1MywiaXNzIjoiS3VuVXpUZXN0In0.S171w1kKHtejXNOwvFhV1VHhcCCPsxqAmXjIYYXYHeMZWz4Fs632Y0bMAj8DySgpF_Uv8pmoTnLYqdG-bm1LBg
+
+###
+GET http://localhost:8080/channel/getById/7bd0504e-be7f-4e05-b643-82f61d0cde9b
+
+#####
+GET http://localhost:8080/channel/changeStatus
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDg4ODU3MzMsImVtYWlsIjoidXNlckBtYWlsLnJ1MSIsInJvbGUiOiJST0xFX1VTRVIiLCJleHAiOjE3MDg5NzIxMzMsImlzcyI6Ikt1blV6VGVzdCJ9.iYcNFljdpSM58D4xyx1NrnIrrAck8Fn3gnJs_R6YcxnIlsghSAcn1Z9U4rbWPKe_JwaHCnE4o03hn9mdfncwxA
+
+{
+  "status": "ACTIVE"
+}
+#####
+GET http://localhost:8080/channel/userchannellist
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDg4ODU3MzMsImVtYWlsIjoidXNlckBtYWlsLnJ1MSIsInJvbGUiOiJST0xFX1VTRVIiLCJleHAiOjE3MDg5NzIxMzMsImlzcyI6Ikt1blV6VGVzdCJ9.iYcNFljdpSM58D4xyx1NrnIrrAck8Fn3gnJs_R6YcxnIlsghSAcn1Z9U4rbWPKe_JwaHCnE4o03hn9mdfncwxA
+
+
+

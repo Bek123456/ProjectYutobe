@@ -1,0 +1,24 @@
+###
+POST http://localhost:8080/comment_like/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTE4ODUwMzcsImVtYWlsIjoidXNlckBtYWlsLnJ1MSIsInJvbGUiOiJST0xFX1VTRVIiLCJleHAiOjE3MTE5NzE0MzcsImlzcyI6Ikt1blV6VGVzdCJ9.hRJHZdvNQIxtUeDMmCN9-ercHm-5wUBaqvkyWyte2131ktpiXmEZgt-DWHwZUSsEHcrNo1SlyT0q-0-R-6YBEg
+
+{
+  "profileId": 2,
+  "commentId": 1,
+  "type": "Dislike"
+}
+
+###
+DELETE http://localhost:8080/comment_like/remove/1
+
+
+###
+GET http://localhost:8080/comment_like/getlike
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTE4ODUwMzcsImVtYWlsIjoidXNlckBtYWlsLnJ1MSIsInJvbGUiOiJST0xFX1VTRVIiLCJleHAiOjE3MTE5NzE0MzcsImlzcyI6Ikt1blV6VGVzdCJ9.hRJHZdvNQIxtUeDMmCN9-ercHm-5wUBaqvkyWyte2131ktpiXmEZgt-DWHwZUSsEHcrNo1SlyT0q-0-R-6YBEg
+
+###
+GET http://localhost:8080/comment_like/getlikeuser/2
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTE4ODU3MjIsImVtYWlsIjoiYWJqYWxpbG92b3pvZGpvbkBnbWFpbC5jb20iLCJyb2xlIjoiUk9MRV9BRE1JTiIsImV4cCI6MTcxMTk3MjEyMiwiaXNzIjoiS3VuVXpUZXN0In0.VKq1-mUfdRO_VuiKzwa2g4iR_7fvie6l-vFOh6JYLW-3z8QAxkI-zTVoNT1ah5VQjOPTdLA0yHMX0hIshnyZIQ
+
+

@@ -1,0 +1,47 @@
+###Create Profile
+POST localhost:8080/profile/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDg4NDk4MzksImVtYWlsIjoiYWJqYWxpbG92b3pvZGpvbkBnbWFpbC5jb20iLCJyb2xlIjoiUk9MRV9BRE1JTiIsImV4cCI6MTcwODkzNjIzOSwiaXNzIjoiS3VuVXpUZXN0In0.eWxiOp-i4o8q-Mvarpg1SdD2rAovSURcLUYSl67_2F8kul0pFGoITbo-PEVgjVu9ZPpXbKYDc0pvBq6A8bEhug
+
+{
+  "name": "sarvar",
+  "surname": "Abdujalilov",
+  "email": "user@mail.ru1",
+  "phone": "user",
+  "password": "user",
+  "status": "ACTIVE",
+  "profileRole": "ROLE_USER"
+}
+####  login
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "abjalilovozodjon@gmail.com",
+  "password": "123456"
+}
+####  Change passord
+# @no-cookie-jar
+PUT http://localhost:8080/profile/chanchePasword
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDg2ODMzMTksImVtYWlsIjoiYWRtaW5AbWFpbC5ydSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNzA4NzY5NzE5LCJpc3MiOiJLdW5VelRlc3QifQ.4wzccIOKPI-JnpW8pqNtbHaqOSNj6ZfiU3z-R2xEOXTaRx7Au9YwTp1HKzRhdCGSAOdqz1SAGaqYCCn3WYzdZA
+Content-Type: application/json
+
+{
+  "password": "123456"
+}
+####CHANGE Email
+PUT http://localhost:8080/profile/updatemail
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDg3NTQ3MjAsImVtYWlsIjoiYWRtaW5AbWFpbC5ydTEiLCJyb2xlIjoiUk9MRV9BRE1JTiIsImV4cCI6MTcwODg0MTEyMCwiaXNzIjoiS3VuVXpUZXN0In0.2ARG6lMMzHf1wJuF3fpNZfDYYgPwYYSGl8V_5DuZCNCf5YLk81ENkbNI7bo0LVx77PLKufBApLu8l5ByrXHpSw
+Content-Type: application/json
+
+{
+  "email": "abjalilovozodjon@gmail.com",
+  "name": "Ozod",
+  "surName": "qwee"
+}
+
+###### Email verifikation
+PUT http://localhost:8080/api/auth/verification/email/eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDg3NTc4NzEsImVtYWlsIjoiYWJqYWxpbG92b3pvZGpvbkBnbWFpbC5jb20iLCJyb2xlIjoiUk9MRV9BRE1JTiIsImlkIjozLCJleHAiOjE3MDg4NDQyNzEsImlzcyI6Ill1dG9iZSJ9.vI5GI9DjrOUqwCzDPK82xBGpVzwFAD3VwG9eztyrkgLrfHDoCs1INrNbPWMctY_Wyyy62fczNhByn_MnCsYD-Q
+#####
+GET http://localhost:8080/profile/getProfildteil
+

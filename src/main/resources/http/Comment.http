@@ -1,0 +1,37 @@
+###
+POST http://localhost:8080/comment/created
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDk3Mjg2NzgsImVtYWlsIjoidXNlckBtYWlsLnJ1MSIsInJvbGUiOiJST0xFX1VTRVIiLCJleHAiOjE3MDk4MTUwNzgsImlzcyI6Ikt1blV6VGVzdCJ9.m7ICgXPxdoQzfoHu50bXlKnsfoPdvM_Nd76pRNkLFY4VaSzIBCk2u0hP1L4DHg-Dt-zw4Xf78_AabmM2w1Io1g
+
+{
+  "videoId": "a4f8d4eb-b66b-47dd-83c9-3b021eda4129",
+  "content": "salomlar",
+  "like_count": 0,
+  "dislike_count": 0
+}
+
+###
+PUT http://localhost:8080/comment/update/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDk3MzIyNjksImVtYWlsIjoic2FydmFyQG1haWwucnUxIiwicm9sZSI6IlJPTEVfT1dORVIiLCJleHAiOjE3MDk4MTg2NjksImlzcyI6Ikt1blV6VGVzdCJ9.ED3j0sI2JtbdzkkHOtp8Kfm4nhDMkJEOeUK-b4kJwIPJY5VAV0HTatdoHckAy40pRTfHakxG48IYs7K1mzHTCw
+
+{
+  "videoId": "a4f8d4eb-b66b-47dd-83c9-3b021eda4129",
+  "content": "uzgardi 1",
+  "replyId": 1,
+  "like_count": 0,
+  "dislike_count": 0
+}
+
+###
+GET http://localhost:8080/comment/getCommitPagination?page=1&size=2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDk5MDEzMjAsImVtYWlsIjoiYWJqYWxpbG92b3pvZGpvbkBnbWFpbC5jb20iLCJyb2xlIjoiUk9MRV9BRE1JTiIsImV4cCI6MTcwOTk4NzcyMCwiaXNzIjoiS3VuVXpUZXN0In0.C1gKWElLrfdck2nEwdi3xmN4ZYwF8o9Z_a6EOJDGH9BwjM8Ui-lBcyiCisN9bKPiqi53PYNkSe6vkozwmWRKCQ
+
+###
+GET http://localhost:8080/comment/getCommitListProfileId/6
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDk5MDEzMjAsImVtYWlsIjoiYWJqYWxpbG92b3pvZGpvbkBnbWFpbC5jb20iLCJyb2xlIjoiUk9MRV9BRE1JTiIsImV4cCI6MTcwOTk4NzcyMCwiaXNzIjoiS3VuVXpUZXN0In0.C1gKWElLrfdck2nEwdi3xmN4ZYwF8o9Z_a6EOJDGH9BwjM8Ui-lBcyiCisN9bKPiqi53PYNkSe6vkozwmWRKCQ
+
+
+

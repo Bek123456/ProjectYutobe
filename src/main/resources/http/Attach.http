@@ -1,0 +1,23 @@
+POST http://localhost:8080/attach/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="6-video.mp4"
+
+#< D:\test\zari\zari.jpg
+D:\videolar\6-video.mp4
+
+#C:\Users\acer\Downloads\Telegram Desktop\2.jpg
+#####
+# @no-cookie-jar
+GET http://localhost:8080/attach/openById/zari.jpg
+
+##### PAGINATION ADMIN
+GET localhost:8080/attach/paginationAttach
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDg3Njc5OTQsImVtYWlsIjoiYWJqYWxpbG92b3pvZGpvbkBnbWFpbC5jb20iLCJyb2xlIjoiUk9MRV9BRE1JTiIsImV4cCI6MTcwODg1NDM5NCwiaXNzIjoiS3VuVXpUZXN0In0._-b5zDVW6SSz3litD7_TXCANZzejWkMHCy1e-eNyG6Yfk4yKlBuQAWAGV0_Utodbbdw4S487spfkGZUus5ZfUA
+
+####
+DELETE http://localhost:8080/attach/deleted/b299f7db-6a03-421b-a40a-dc2a6e1dbbaf
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDg3NzIyNDUsImVtYWlsIjoiYWJqYWxpbG92b3pvZGpvbkBnbWFpbC5jb20iLCJyb2xlIjoiUk9MRV9BRE1JTiIsImV4cCI6MTcwODg1ODY0NSwiaXNzIjoiS3VuVXpUZXN0In0.qqHrwc09UaQ3WI6n3x21AVMq-aMxKh8qBefABLHOcTa6955EVBri6a7GMyqheckqo2pe2-VMZ-058-uXsgLuQg
+
+

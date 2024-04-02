@@ -1,0 +1,46 @@
+###
+POST http://localhost:8080/subscription/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTA5NTM4NjEsImVtYWlsIjoidXNlckBtYWlsLnJ1MSIsInJvbGUiOiJST0xFX1VTRVIiLCJleHAiOjE3MTEwNDAyNjEsImlzcyI6Ikt1blV6VGVzdCJ9.QqpuDgUmsMJPhvZeqVNvMK7Rdk6sqc6GUD2jWZ8x7UkVIOTtHulSgRf2mDLPS4rWEQw4P-GTYYjDzwN3AOpTtg
+
+{
+  "profileId": 1,
+  "channelId": "7bd0504e-be7f-4e05-b643-82f61d0cde9b",
+  "status": "active",
+  "notificationType": "All"
+}
+
+###
+PUT http://localhost:8080/subscription/update
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTA5NTM4NjEsImVtYWlsIjoidXNlckBtYWlsLnJ1MSIsInJvbGUiOiJST0xFX1VTRVIiLCJleHAiOjE3MTEwNDAyNjEsImlzcyI6Ikt1blV6VGVzdCJ9.QqpuDgUmsMJPhvZeqVNvMK7Rdk6sqc6GUD2jWZ8x7UkVIOTtHulSgRf2mDLPS4rWEQw4P-GTYYjDzwN3AOpTtg
+
+{
+  "channelId": "7bd0504e-be7f-4e05-b643-82f61d0cde9b",
+  "status": "active"
+}
+
+
+###
+###
+PUT http://localhost:8080/subscription/updateNotificationType
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTA5NTM4NjEsImVtYWlsIjoidXNlckBtYWlsLnJ1MSIsInJvbGUiOiJST0xFX1VTRVIiLCJleHAiOjE3MTEwNDAyNjEsImlzcyI6Ikt1blV6VGVzdCJ9.QqpuDgUmsMJPhvZeqVNvMK7Rdk6sqc6GUD2jWZ8x7UkVIOTtHulSgRf2mDLPS4rWEQw4P-GTYYjDzwN3AOpTtg
+
+{
+  "type": "Non",
+  "channel_id": "7bd0504e-be7f-4e05-b643-82f61d0cde9b"
+}
+
+
+
+
+###
+GET http://localhost:8080/subscription/getusersubscription
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTE2MDMyMDksImVtYWlsIjoidXNlckBtYWlsLnJ1MSIsInJvbGUiOiJST0xFX1VTRVIiLCJleHAiOjE3MTE2ODk2MDksImlzcyI6Ikt1blV6VGVzdCJ9.jlzarzDGJsE6k7QbAuhXjhGfBNM3UiT42TnyiNhJ3yCg_l_uHeEnrAtaAU6jg0hdvwPwYcv0eNEEt2jB7RL0jA
+
+###
+GET http://localhost:8080/subscription/getusersubscriptionadmin/6
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTE2MTExMzYsImVtYWlsIjoiYWJqYWxpbG92b3pvZGpvbkBnbWFpbC5jb20iLCJyb2xlIjoiUk9MRV9BRE1JTiIsImV4cCI6MTcxMTY5NzUzNiwiaXNzIjoiS3VuVXpUZXN0In0.satp-Fy3dc9npyXMfumhKMLkiqtN_f0tsWui15JZQSyp4FF6ZGM5T9mA-s1qA-vSoD3tWCqKg5SdNk4rQbdlXA
+
+

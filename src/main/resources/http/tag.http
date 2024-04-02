@@ -1,0 +1,24 @@
+POST http://localhost:8080/tag/create
+Content-Type: application/json
+
+{
+  "name": "Zurmi="
+}
+
+######
+PUT http://localhost:8080/tag/update/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDg3NzYyOTMsImVtYWlsIjoiYWJqYWxpbG92b3pvZGpvbkBnbWFpbC5jb20iLCJyb2xlIjoiUk9MRV9BRE1JTiIsImV4cCI6MTcwODg2MjY5MywiaXNzIjoiS3VuVXpUZXN0In0.GFW8vU00PiGpfr2QAv1Ld4VZkda4_4SxEtSI7mZO-d-ubfZiFkxNUty520Ix_v6fvbmEcDsCoZygI2DcBhYO8w
+
+{
+
+  "name": "OZOD1"
+}
+
+
+#######
+DELETE http://localhost:8080/tag/delete/1
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDg3NzYyOTMsImVtYWlsIjoiYWJqYWxpbG92b3pvZGpvbkBnbWFpbC5jb20iLCJyb2xlIjoiUk9MRV9BRE1JTiIsImV4cCI6MTcwODg2MjY5MywiaXNzIjoiS3VuVXpUZXN0In0.GFW8vU00PiGpfr2QAv1Ld4VZkda4_4SxEtSI7mZO-d-ubfZiFkxNUty520Ix_v6fvbmEcDsCoZygI2DcBhYO8w
+
+#####
+GET http://localhost:8080/tag/getAll

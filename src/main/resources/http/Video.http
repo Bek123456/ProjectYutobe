@@ -1,0 +1,64 @@
+###
+POST http://localhost:8080/video/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDkzNjE3NjMsImVtYWlsIjoic2FydmFyQG1haWwucnUxIiwicm9sZSI6IlJPTEVfT1dORVIiLCJleHAiOjE3MDk0NDgxNjMsImlzcyI6Ikt1blV6VGVzdCJ9.6XFABmZDs_Msxt0LnAkw5pGvvq2ANDNhChQFjPUTnlwGv8XKTzOsaxd2s5dX-iieGVFrDL3oAm0sXVCv9itF9A
+
+{
+  "previewAttachId": "bbaf36c4-5b7e-4ed3-9822-556aa9ef5fa6",
+  "title": "zyr",
+  "categoryId": 2,
+  "attachId": "bbaf36c4-5b7e-4ed3-9822-556aa9ef5fa6",
+  "status": "PRIVATE",
+  "type": "shorts",
+  "viewCount": 0,
+  "sharedCount": 0,
+  "description": "buladi",
+  "channelId": "7bd0504e-be7f-4e05-b643-82f61d0cde9b",
+  "likeCount": 0,
+  "dislikeCount": 0
+}
+
+###
+PUT http://localhost:8080/video/update/a1e73c60-dde9-448b-91ca-058f18b8ceac
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDkyNzA2MjIsImVtYWlsIjoic2FydmFyQG1haWwucnUxIiwicm9sZSI6IlJPTEVfT1dORVIiLCJleHAiOjE3MDkzNTcwMjIsImlzcyI6Ikt1blV6VGVzdCJ9.rSRmGzwdlNKqAffRSg3whHCgEI6IFkA-vGtTUZzjGEjk-WXsdhRWHonFzPp9sosW0NiCPsHIDGpd3BqaQXOT3A
+
+{
+  "title": "UZGAFDI",
+  "status": "PUBLIC",
+  "type": "video",
+  "viewCount": 0,
+  "sharedCount": 0,
+  "description": "salom",
+  "likeCount": 0,
+  "dislikeCount": 0
+}
+
+###
+PUT http://localhost:8080/video/updateChanche/a4f8d4eb-b66b-47dd-83c9-3b021eda4129
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDkzNjE3NjMsImVtYWlsIjoic2FydmFyQG1haWwucnUxIiwicm9sZSI6IlJPTEVfT1dORVIiLCJleHAiOjE3MDk0NDgxNjMsImlzcyI6Ikt1blV6VGVzdCJ9.6XFABmZDs_Msxt0LnAkw5pGvvq2ANDNhChQFjPUTnlwGv8XKTzOsaxd2s5dX-iieGVFrDL3oAm0sXVCv9itF9A
+
+{
+  "status": "PUBLIC"
+}
+
+###
+GET http://localhost:8080/video/getViewCount/a4f8d4eb-b66b-47dd-83c9-3b021eda4129
+
+###
+GET http://localhost:8080/video/getPaginationCategoryId?page=1&size=2&categoryId=2
+
+
+###
+GET http://localhost:8080/video/getVideoTag/2
+Content-Type: application/json
+
+{
+  "page": 1,
+  "size": 2
+}
+
+
+
+

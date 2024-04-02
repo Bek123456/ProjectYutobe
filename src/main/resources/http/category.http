@@ -1,0 +1,32 @@
+###
+POST http://localhost:8080/controller/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDkxMTExNDgsImVtYWlsIjoiYWJqYWxpbG92b3pvZGpvbkBnbWFpbC5jb20iLCJyb2xlIjoiUk9MRV9BRE1JTiIsImV4cCI6MTcwOTE5NzU0OCwiaXNzIjoiS3VuVXpUZXN0In0.Jk-ythHwVIq3ZK2_nq0XgyyG3LaZisme3KDm22wSMQ9y4NOfvPjFsnSDRo1_WTbGwfrkYh5I1g60YkUbbFq-JQ
+
+{
+  "name": "salim"
+}
+
+###
+PUT http://localhost:8080/controller/update/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDkxMTExNDgsImVtYWlsIjoiYWJqYWxpbG92b3pvZGpvbkBnbWFpbC5jb20iLCJyb2xlIjoiUk9MRV9BRE1JTiIsImV4cCI6MTcwOTE5NzU0OCwiaXNzIjoiS3VuVXpUZXN0In0.Jk-ythHwVIq3ZK2_nq0XgyyG3LaZisme3KDm22wSMQ9y4NOfvPjFsnSDRo1_WTbGwfrkYh5I1g60YkUbbFq-JQ
+
+{
+
+  "name": "Ali"
+}
+
+###
+DELETE http://localhost:8080/controller/delete/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDkxMTExNDgsImVtYWlsIjoiYWJqYWxpbG92b3pvZGpvbkBnbWFpbC5jb20iLCJyb2xlIjoiUk9MRV9BRE1JTiIsImV4cCI6MTcwOTE5NzU0OCwiaXNzIjoiS3VuVXpUZXN0In0.Jk-ythHwVIq3ZK2_nq0XgyyG3LaZisme3KDm22wSMQ9y4NOfvPjFsnSDRo1_WTbGwfrkYh5I1g60YkUbbFq-JQ
+
+###
+GET http://localhost:8080/controller/getAll
+
+
+
+
+
+

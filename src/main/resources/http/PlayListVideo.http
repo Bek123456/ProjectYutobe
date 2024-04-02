@@ -1,0 +1,17 @@
+###
+POST http://localhost:8080/playlistvideo/created
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDk1NjU4NTMsImVtYWlsIjoic2FydmFyQG1haWwucnUxIiwicm9sZSI6IlJPTEVfT1dORVIiLCJleHAiOjE3MDk2NTIyNTMsImlzcyI6Ikt1blV6VGVzdCJ9.WZCuarIPkZ0OF8PqyBFhnP757QEtYXSD2VM_3PenPhQr8c_b0Gm2vFWn5ejrTOZVzkL2cLQplPBNsXLp5baCeQ
+
+{
+  "playlist_id": 2,
+  "video_id": "a4f8d4eb-b66b-47dd-83c9-3b021eda4129",
+  "order_num": 0
+}
+
+
+
+###
+GET http://localhost:8080/playlistvideo/getAll/2
+
+
